@@ -263,14 +263,14 @@ Caught by a sheikh 💸
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
 ⤷ Sheikh : @P8_PP - @x_o_x 
-⤷ Source Max : @v_m_s 
+⤷ Source Max : @v_m_s - @zzP_z
     ''')
                     await event.client.send_message("@P8_PP", f'''
 Caught by a sheikh 💸
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
 ⤷ Sheikh : @P8_PP - @x_o_x 
-⤷ Source Max : @v_m_s 
+⤷ Source Max : @v_m_s - @zzP_z
 ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -293,12 +293,6 @@ Caught by a sheikh 💸
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
-	try:
-    	await sython(functions.channels.JoinChannelRequest(
-    	channel='x_o_x'
-    	))
-    except:
-    	pass
     if ispay2[0] == "yes":
         trys = 0
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -335,7 +329,7 @@ Caught by a sheikh 💸
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
 ⤷ Sheikh : @P8_PP - @x_o_x 
-⤷ Source Max : @v_m_s 
+⤷ Source Max : @v_m_s - @zzP_z
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -370,7 +364,7 @@ Caught by a sheikh 💸
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
 ⤷ Sheikh : @P8_PP - @x_o_x 
-⤷ Source Max : @v_m_s 
+⤷ Source Max : @v_m_s - @zzP_z
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
