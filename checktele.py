@@ -222,8 +222,6 @@ async def _(event):
     	))
     except:
     	pass
-    except:
-    	pass
     if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
