@@ -209,6 +209,12 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
 async def _(event):
+	try:
+    	await sython(functions.channels.JoinChannelRequest(
+    	channel='x_o_x'
+    	))
+    except:
+    	pass
     if ispay2[0] == "yes":
         await event.edit(tele_checker2)
 # صيد عدد نوع قناة
@@ -272,12 +278,6 @@ Caught by a sheikh 💸
 ⤷ Sheikh : @P8_PP - @x_o_x 
 ⤷ Source Max : @v_m_s 
 ''')
-    try:
-    	await sython(functions.channels.JoinChannelRequest(
-    	channel='x_o_x'
-    	))
-    except:
-    	pass
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
