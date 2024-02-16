@@ -79,12 +79,12 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ 𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝑂𝐔𝑅𝐶𝐸 𝑀𝐴𝑋 🇮🇶
-☆ VERSION : 2.8
+**☆ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 𝙸𝚂 𝚁𝚄𝙽𝙽𝙸𝙽𝙶 
+☆ VERSION : 1.0
 ☆ PING : `{ms}`
 ☆ DATE : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
-☆ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗠𝗔𝗫  : @Max985 = @FCF303**
+☆ Developer Sheikh : @P8_PP - @v_m_s**
 
 -قـم بأرسال `.الاوامر`
 ''')
