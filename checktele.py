@@ -216,10 +216,12 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
-	try:
+    try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel= ("FF7FS", "x_o_x", "v_m_s")
+    	channel='v_m_s'
     	))
+    except:
+    	pass
     except:
     	pass
     if ispay2[0] == "yes":
