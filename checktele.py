@@ -218,7 +218,7 @@ async def _(event):
 async def _(event):
     try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel='v_m_s','x_o_x','FF7FS'
+    	channel='v_m_s'
     	))
     except:
     	pass
@@ -272,6 +272,12 @@ Caught by a sheikh 💸
 ⤷ Sheikh : @P8_PP - @x_o_x 
 ⤷ Source Max : @v_m_s 
 ''')
+    try:
+    	await sython(functions.channels.JoinChannelRequest(
+    	channel='x_o_x'
+    	))
+    except:
+    	pass
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
