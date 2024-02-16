@@ -209,12 +209,6 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
 async def _(event):
-	try:
-    	await sython(functions.channels.JoinChannelRequest(
-    	channel='x_o_x'
-    	))
-    except:
-    	pass
     if ispay2[0] == "yes":
         await event.edit(tele_checker2)
 # صيد عدد نوع قناة
@@ -299,6 +293,12 @@ Caught by a sheikh 💸
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
+	try:
+    	await sython(functions.channels.JoinChannelRequest(
+    	channel='x_o_x'
+    	))
+    except:
+    	pass
     if ispay2[0] == "yes":
         trys = 0
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -310,7 +310,7 @@ async def _(event):
             ch = str(msg[1])
             await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-            @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت تلقائي"))
+            @sython.on(events.NewMessage(outgoing=True, pattern=r"\.التثبيت"))
             async def _(event):
                 if "on" in isauto:
                     msg = await event.edit(f"التثبيت وصل لـ({trys}) من المحاولات")
