@@ -13,9 +13,9 @@ from help import *
 from config import *
 from threading import Thread
 
-a = 'qwertyuiopdfghjklzcvbnm'
+a = 'qwertyuiopadfghjklzcvbnm'
 b = '1234567890'
-e = 'qwertyuiopssdfghjklzcvbnm1234567890'
+e = 'qwertyuiopassdfghjklzcvbnm1234567890'
 
 banned = []
 isclaim = ["off"]
@@ -259,7 +259,7 @@ async def _(event):
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-Caught by a sheikh 💸
+Caught by a sheikh ??
 ⤷ ID : @{username}
 ⌯ Clicks ⤷ : {trys}
 ⤷ Sheikh : @P8_PP - @x_o_x 
