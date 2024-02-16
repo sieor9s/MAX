@@ -277,11 +277,11 @@ Caught by a sheikh 💸
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await sython.send_message(event.chat_id, f'''Property/خاصيه @{username}''')
+                    await sython.send_message(event.chat_id, f'''Property ~ خاصيه @{username}''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await sython.send_message(event.chat.id, "Feature or auction/خاصيه لو مزاد")
+                        await sython.send_message(event.chat.id, "Feature or auction ~ خاصيه لو مزاد")
             else:
                 pass
             trys += 1
@@ -289,7 +289,7 @@ Caught by a sheikh 💸
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "Fishing is over/انتهاء الصيد")
+        await event.client.send_message(event.chat_id, "Fishing is over ~ انتهاء الصيد")
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
