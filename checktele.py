@@ -218,7 +218,7 @@ async def _(event):
 async def _(event):
     try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel='x_o_x'
+    	channel='v_m_s'
     	))
     except:
     	pass
