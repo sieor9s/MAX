@@ -33,10 +33,14 @@ def check_user(username):
         "User-Agent": generate_user_agent(),
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
         "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7"}
+        "Accept-Language": "en-US,en;q=0.5",
+        "Referer": "https://t.me/",
+        "Host": "t.me",
+        "Connection": "keep-alive"
+    }
 
     response = requests.get(url, headers=headers)
-    if response.text.find('If you have <strong>Telegram</strong>, you can contact <a class="tgme_username_link"') >= 0:
+    if 'tgme_page_action' in response.text:
         return "Available"
     else:
         return "Unavailable"
